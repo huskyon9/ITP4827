@@ -3,16 +3,16 @@
   <html>
   <head>
   <meta charset="utf-8">
-  <title>index</title>
+  <title>Team List</title>
   
   <!--CSS-->
-	  <style>  
-	  
+	  <style>
+
 /*Design background and translucent background layer makes the contant more clear*/
 .background{
 	background-color: rgba(26,26,26,0.2);
 	}
-	
+
 /*Set the background picture and fix the background image*/
 body {
   background-image: url('media file/background img.png');
@@ -21,7 +21,7 @@ body {
   background-size: 100% 100%;
 }
 
-/*Desgin a collapsible for menu and control*/
+/*Desgin a collapsible for menu and control*/		  
 .collapsible-menu {
   background-color: rgba(51,153,255,1);
   color: white;
@@ -46,17 +46,34 @@ body {
 .main-contact {
 	background-color: rgba(26,26,26,0.5);
 	color: #FFFFFF;
-		  }
+}
 
 /*Set the background color*/
 .sponsor{
 		background-color: #FFFFFF; 
-		  }
-		  
+}
+
+/*The player image will on your page size to change the width*/		  
+.player {
+  width: 80%;
+  height: auto;
+  overflow: hidden;
+}
+
+/*Use the transition function to make a visual effects. The picture will zoom in and zoom out*/
+.player img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.2s ease-out;
+}
+.player:hover img {
+  transform: scale(1.1);
+}
       </style>
 
+	  
   </head>
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 	  <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZC4N730V0J"></script>
 <script>
@@ -68,16 +85,15 @@ body {
 </script>
 
   <body style="text-align: center">
-
   
+	  
   <div class="background">
   
   <!--Use the table funtion and add the Chelsea Logo in the top.-->
   <br><table width="100%" border="1">
       <tbody>
         <tr>
-		  <!--set a hypertext reference in the Chelsea Logo and fix the size of picture-->
-          <th scope="top"><a href="index.html"><img src="media file/clublogo/Chelsea_FC.svg.png" width="128" height="128"/></a></th>
+         <th scope="top"><a href="index.html"><img src="media file/clublogo/Chelsea_FC.svg.png" width="128" height="128"/></a></th>
         </tr>
       </tbody>
   </table>
@@ -138,15 +154,92 @@ body {
 
 </div>
     
-  <!--The further competition of Chelsea and different football Club Logo and name-->
+<!--Set the player picture size and hypertext reference to different player page-->
     <div class="main-contact">
-  <img src="media file/slogans.png" width=100% height=100% alt=""/> 
-	 </div>
+	<p style="text-align: center; font-size: 24px;">Our Players List</p>
+	
+<table width="100%">
+  <tbody style="text-align: center">
+    <tr>
+      <th scope="col"> <a href="1_Kepa Arrizabalaga.html">
+		 <div class="player">
+		  <img src="media file/player/1_Kepa Arrizabalaga.png" width="390" height="445" alt=""/></div></a>
+      </th>
+      <th scope="col"><a href="13_Marcus Bettinelli.html">
+		  <div class="player">
+			  <img src="media file/player/13_Marcus Bettinelli.png" width="390" height="445" alt=""/></div></a> </th>
+      <th scope="col"> <a href="4_Benoit Badiashile.html"><div class="player">
+		  <img src="media file/player/4_Benoit Badiashile.png" width="390" height="445" alt=""/></div></a> </th>
+    </tr>
+    <tr>
+      <td><a href="6_Thiago Emiliano da Silva.html">
+		  <div class="player">
+			  <img src="media file/player/6_Thiago Emiliano da Silva.png" width="390" height="445" alt=""/></div></a></td>
+      <td><a href="21_Ben Chilwell.html">
+		  <div class="player"><img src="media file/player/21_Ben Chilwell.png" width="390" height="445" alt=""/></div>
+		  </a></td>
+      <td><a href="24_Reece James.html"><div class="player"><img src="media file/player/24_Reece James.png" width="390" height="445" alt=""/></div></a>  
+      </td>
+    </tr>
+    <tr>
+      <td><a href="26_Kalidou Koulibaly.html"><div class="player"><img src="media file/player/26_Kalidou Koulibaly.png" width="390" height="445" alt=""/></div></a></td>
+      <td><a href="28_Cesar Azpilicueta.html"><div class="player"><img src="media file/player/28_Cesar Azpilicueta.png" width="390" height="445" alt=""/></div></a></td>
+      <td><a href="32_Marc Cucurella.html"><div class="player"><img src="media file/player/32_Marc Cucurella.png" width="390" height="445" alt=""/></div></a></td>
+    </tr>
+    <tr>
+      <td><a href="33_Wesley Fofana.html"><div class="player"><img src="media file/player/33_Wesley Fofana.png" width="390" height="445" alt=""/></div></a></td>
+      <td><a href="5_Enzo Fernandez.html"><div class="player"><img src="media file/player/5_Enzo Fernandez.png" width="390" height="445" alt=""/></div></a></td>
+      <td><a href="8_Mateo Kovacic.html">
+		  <div class="player">
+			  <img src="media file/player/8_Mateo Kovacic.png" width="390" height="445" alt=""/></div></a></td>
+    </tr>
+    <tr>
+      <td><a href="12_Ruben Loftus-Cheek.html"><div class="player"><img src="media file/player/12_Ruben Loftus-Cheek.png" width="390" height="445" alt=""/></div></a></td>
+      <td><a href="19_Mason Mount.html"><div class="player"><img src="media file/player/19_Mason Mount.png" width="390" height="445" alt=""/></div></a></td>
+      <td><a href="20_Denis Zakaria.html"><div class="player"><img src="media file/player/20_Denis Zakaria.png" width="390" height="445" alt=""/></div></a></td>
+    </tr>
+    <tr>
+      <td><a href="23_Conor Gallagher.html"><div class="player"><img src="media file/player/23_Conor Gallagher.png" width="390" height="445" alt=""/></div></a></td>
+      <td><a href="9_Pierre-Emerick Aubameyang.html"><div class="player"><img src="media file/player/9_Pierre-Emerick Aubameyang.png" width="390" height="445" alt=""/></div></a></td>
+      <td><a href="11_Joao Felix Sequeira.html"><div class="player"><img src="media file/player/11_Joao Felix Sequeira.png" width="390" height="445" alt=""/></div></a></td>
+    </tr>
+    <tr>
+      <td><a href="10_Christian Pulisic.html"><div class="player"><img src="media file/player/10_Christian Pulisic.png" width="390" height="445" alt=""/></div></a></td>
+      <td><a href="15_Mykhailo Mudryk.html"><div class="player"><img src="media file/player/15_Mykhailo Mudryk.png" width="390" height="445" alt=""/></div></a></td>
+      <td><a href="17_Raheem Sterling.html"><div class="player"><img src="media file/player/17_Raheem Sterling.png" width="390" height="445" alt=""/></div></a></td>
+    </tr>
+    <tr>
+      <td><a href="27_David Fofana.html"><div class="player"><img src="media file/player/27_David Fofana.png" width="390" height="445" alt=""/></div></a></td>
+      <td><a href="29_Kai Havertz.html"><div class="player"><img src="media file/player/29_Kai Havertz.png" width="390" height="445" alt=""/></div></a></td>
+      <td><a href="31_Noni Madueke.html"><div class="player"><img src="media file/player/31_Noni Madueke.png" width="390" height="445" alt=""/></div></a></td>
+    </tr>
+  </tbody>
+</table>
+
+    </div>
+		   
+  <br>
+    <br>
+	  <br>
+	  <br>
+	  <br>
+	  <br>
+	  <br>
+	<table width="100%">
+  <tbody>
+    <tr>
+	
+<!--Set a function for back to the website top-->
+      <th bgcolor="#FFFFFF" scope="col"> <h3 style="font-family: Baskerville, 'Palatino Linotype', Palatino, 'Century Schoolbook L', 'Times New Roman', serif; font-style: inherit; font-weight: bolder; text-align: center;"><a href="#top">△Back To Top</a></h3>      </th>
+    </tr>
+  </tbody>
+</table>
+  </div>
  
   </body>
 	  
 <!--The different sponsor Logo with hypertext reference and fix the size-->
-	<div id="sponsor">
+	  	  <div id="sponsor">
 <article class="sponsor">Our Sponsors<table width="100%" align="center">
   <tbody>
     <tr>
@@ -194,7 +287,8 @@ for (i = 0; i < coll.length; i++) {
     } else {
       content.style.maxHeight = content.scrollHeight + "px";
     } 
-	});
+  });
 }
-	</script> 
+	</script>
 </html>
+

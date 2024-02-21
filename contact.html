@@ -3,16 +3,16 @@
   <html>
   <head>
   <meta charset="utf-8">
-  <title>index</title>
+  <title>Contact Us</title>
   
   <!--CSS-->
-	  <style>  
+	  <style>
 	  
 /*Design background and translucent background layer makes the contant more clear*/
 .background{
 	background-color: rgba(26,26,26,0.2);
 	}
-	
+
 /*Set the background picture and fix the background image*/
 body {
   background-image: url('media file/background img.png');
@@ -46,6 +46,7 @@ body {
 .main-contact {
 	background-color: rgba(26,26,26,0.5);
 	color: #FFFFFF;
+	text-align: left;
 		  }
 
 /*Set the background color*/
@@ -56,7 +57,7 @@ body {
       </style>
 
   </head>
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 	  <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZC4N730V0J"></script>
 <script>
@@ -76,13 +77,13 @@ body {
   <br><table width="100%" border="1">
       <tbody>
         <tr>
-		  <!--set a hypertext reference in the Chelsea Logo and fix the size of picture-->
-          <th scope="top"><a href="index.html"><img src="media file/clublogo/Chelsea_FC.svg.png" width="128" height="128"/></a></th>
+		 <!--set a hypertext reference in the Chelsea Logo and fix the size of picture-->
+         <th scope="top"><a href="index.html"><img src="media file/clublogo/Chelsea_FC.svg.png" width="128" height="128"/></a></th>
         </tr>
       </tbody>
   </table>
   
-  <!--In collapsible set a button to go main page-->
+	<!--In collapsible set a button to go main page-->
     <button class="collapsible-menu"><div class="main-table">
       Menu
     </div></button>
@@ -138,15 +139,120 @@ body {
 
 </div>
     
-  <!--The further competition of Chelsea and different football Club Logo and name-->
+<!--Use the table function-->
     <div class="main-contact">
-  <img src="media file/slogans.png" width=100% height=100% alt=""/> 
-	 </div>
+<table width="100%" >
+  <tbody>
+    <tr>
+      <th style="font-size: 36px" scope="col">Contact Us</th>
+    </tr>
+  </tbody>
+</table>
+<table width="100%" border="1">
+  <tbody>
+    <tr>
+      <th style="text-align: left" scope="col">General Enquiries
+UK: 0371 811 1955 (International: +44 207 386 9373)
+<br><br>
+Tickets & Membership
+UK: 0371 811 1905 (International: +44 207 835 6000)
+<br><br>
+Disabled Supporters Office
+UK: 0371 811 2012 (International: +44 207 915 1950)
+<br><br>
+Hospitality
+UK: 0371 811 1955 (International: +44 207 386 9373)
+<br><br>
+Hotel Reservations
+UK: 020 7565 1414 (International: +44 207 565 1414)
+</th>
+      <th scope="col">Hotel Front Desk
+UK: 020 3479 3565 (International: +44 203 479 3565)
+<br><br>
+Meetings & Events
+UK: 0371 811 1955 (International: +44 207 386 9373)
+<br><br>
+Soccer Schools
+UK: 01932 596193 (International: +44 1932 596 193 )
+<br><br>
+Stadium Tours & Museum
+UK: 0371 811 1955 (International: +44 207 386 9373)</th>
+    </tr>
+  </tbody>
+</table>
+<table width="100%" >
+  <tbody>
+    <tr>
+      <th scope="col">
+	  
+<!--Create a From to Contact Us and comment-->
+<!--Use the fieldset function-->
+		  <form name="contact" onsubmit="print_result()">
+			<fieldset>
+				<legend>Contact Us - By Email</legend>
+Name:
+<input type="text" id="name" pattern="^[A-Z][a-z]*" title="Need Capital at First Letter" required="">
+<br><br>
+
+<!--button function-->
+Gender:
+<input type="radio" name="gender" value="Male"> Male
+<input type="radio" name="gender" value="Female"> Female 
+	<br><br>		
+				
+Your Email Address:
+	<input type="email" id="email" required="">
+<br><br>
+Tel:
+					
+<input type="text" id="phone" required="" pattern="^[0-9]{13}*">
+<br><br>
+
+<fieldset>
+<legend>Your Message *:</legend>
+<textarea name="msg" id="msg" cols="30" rows="20" onclick="cleanAll()" title="Try to text something here..." style="height: 100%; width: 100%;"></textarea></fieldset>
+<br>
+<input type="submit" id="submit" value="Submit" title="Submit" onclick="getValue()">
+<input type="reset" id="reset" value="Reset" title="Clear the text you input">
+</fieldset>
+</form>
+		  
+		  
+		  <p>This Website Designed by Lo Tin Sang (220072817) and Chu Chun Hei (220162558)</p></th>
+    </tr>
+    <tr>
+      <td style="font-weight: bold; font-size: 36px;">Our Social Media</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.facebook.com/ChelseaFC/"><img src="media file/socialmedia/2021_Facebook_icon.svg.png" width="75" height="75" alt=""/></a>&nbsp;&nbsp;<a href="https://www.instagram.com/chelseafc/"><img src="media file/socialmedia/Instagram_logo_2022.svg.png" width="75" height="75" alt=""/>&nbsp;&nbsp;</a><a href="https://twitter.com/chelseafc"><img src="media file/socialmedia/Logo_of_Twitter,_Inc..svg.png" width="90" height="74" alt=""/>&nbsp;&nbsp;</a><a href="https://www.tiktok.com/@chelseafc"><img src="media file/socialmedia/tiktok.png" width="90" height="90" alt=""/>&nbsp;&nbsp;</a><a href="https://www.youtube.com/chelseafc"><img src="media file/socialmedia/youtube.png" width="100" height="100" alt=""/>&nbsp;&nbsp;</a></td>
+    </tr>
+  </tbody>
+</table>
+
+
+    </div>
+		   
+  <br>
+    <br>
+	  <br>
+	  <br>
+	  <br>
+	  <br>
+	  <br>
+	<table width="100%">
+  <tbody>
+    <tr>
+	
+<!--Set a function for back to the website top-->
+      <th bgcolor="#FFFFFF" scope="col"> <h3 style="font-family: Baskerville, 'Palatino Linotype', Palatino, 'Century Schoolbook L', 'Times New Roman', serif; font-style: inherit; font-weight: bolder; text-align: center;"><a href="#top">△Back To Top</a></h3>      </th>
+    </tr>
+  </tbody>
+</table>
+  </div>
  
   </body>
 	  
-<!--The different sponsor Logo with hypertext reference and fix the size-->
-	<div id="sponsor">
+	  	  <div id="sponsor">
 <article class="sponsor">Our Sponsors<table width="100%" align="center">
   <tbody>
     <tr>
@@ -194,7 +300,22 @@ for (i = 0; i < coll.length; i++) {
     } else {
       content.style.maxHeight = content.scrollHeight + "px";
     } 
-	});
+  });
 }
-	</script> 
+
+<!--This script for the From submit-->
+function getValue() {
+  var name = document.getElementById("name").value;
+  var email = document.getElementById("email").value;
+  if (document.getElementsByName("gender")[0].checked) {
+    var gender = "Male";
+  } else {
+    var gender = "Female";
+  }
+  var phone = document.getElementById("phone").value;
+
+  confirm("Name: " + name + "\nEmail: " + email + "\nGender: " + gender + "\nTel: " + phone);
+}
+	</script>
 </html>
+
