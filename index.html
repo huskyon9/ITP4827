@@ -4,59 +4,8 @@
   <head>
   <meta charset="utf-8">
   <title>index</title>
-  
-  <!--CSS-->
-	  <style>  
-	  
-/*Design background and translucent background layer makes the contant more clear*/
-.background{
-	background-color: rgba(26,26,26,0.2);
-	}
-	
-/*Set the background picture and fix the background image*/
-body {
-  background-image: url('media file/background img.png');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 100% 100%;
-}
 
-/*Desgin a collapsible for menu and control*/
-.collapsible-menu {
-  background-color: rgba(51,153,255,1);
-  color: white;
-  width: 100%;
-  font-size: 25px;
-}
-
-/*Set the collapsible hover effects and background color*/
-.active, .collapsible-menu:hover {
-	background-color: rgba(48,113,179,1.00);
-}
-
-/*Desgin a collapsible for content and control*/
-.menu-content {
-  background-color: rgba(51,153,255,1);
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.5s ease-out;
-}
-
-/*button color control*/
-.main-contact {
-	background-color: rgba(26,26,26,0.5);
-	color: #FFFFFF;
-		  }
-
-/*Set the background color*/
-.sponsor{
-		background-color: #FFFFFF; 
-		  }
-		  
-      </style>
-
-
-	  <!-- Google tag (gtag.js) -->
+<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZC4N730V0J"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -64,7 +13,11 @@ body {
   gtag('js', new Date());
 
   gtag('config', 'G-ZC4N730V0J');
+
 </script>
+
+
+
   </head>
 
   <body style="text-align: center">
@@ -178,10 +131,59 @@ body {
 </article>
 	  </div>
 	  
+</html>
+
+<!--CSS-->
+	  <style>  
 	  
-	  
-<!--This script for the menu animation-->
-	<script>
+/*Design background and translucent background layer makes the contant more clear*/
+.background{
+	background-color: rgba(26,26,26,0.2);
+	}
+	
+/*Set the background picture and fix the background image*/
+body {
+  background-image: url('media file/background img.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+/*Desgin a collapsible for menu and control*/
+.collapsible-menu {
+  background-color: rgba(51,153,255,1);
+  color: white;
+  width: 100%;
+  font-size: 25px;
+}
+
+/*Set the collapsible hover effects and background color*/
+.active, .collapsible-menu:hover {
+	background-color: rgba(48,113,179,1.00);
+}
+
+/*Desgin a collapsible for content and control*/
+.menu-content {
+  background-color: rgba(51,153,255,1);
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+}
+
+/*button color control*/
+.main-contact {
+	background-color: rgba(26,26,26,0.5);
+	color: #FFFFFF;
+		  }
+
+/*Set the background color*/
+.sponsor{
+		background-color: #FFFFFF; 
+		  }
+		  
+      </style>
+
+<script>
 var coll = document.getElementsByClassName("collapsible-menu");
 var i;
 
@@ -189,12 +191,25 @@ for (i = 0; i < coll.length; i++) {
   coll[i].addEventListener("click", function() {
     this.classList.toggle("active");
     var content = this.nextElementSibling;
-    if (content.style.maxHeight){
+    if (content.style.maxHeight) {
       content.style.maxHeight = null;
     } else {
       content.style.maxHeight = content.scrollHeight + "px";
-    } 
-	});
+    }
+  });
 }
-	</script> 
-</html>
+
+var teamColl = document.getElementsByClassName("team-menu");
+
+for (i = 0; i < teamColl.length; i++) {
+  teamColl[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight) {
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  });
+}
+</script>
